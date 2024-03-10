@@ -1,29 +1,20 @@
-# quiz-app
+# Quiz App
 
-This template should help get you started developing with Vue 3 in Vite.
+The challenge learning project from the website https://www.frontendmentor.io to create Quiz Programming App.
 
-## Recommended IDE Setup
+You can access Live Preview in https://quiz-app-one-bay.vercel.app/
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![Quiz App Preview](https://raw.githubusercontent.com/akhsanby/personal-web/main/public/images/image15.png)
 
-## Customize configuration
+## How Install
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+1. clone this repo
+2. type this command in terminal
 
-## Project Setup
+   ```
+   cd quiz-app
+   npm i
+   npm run dev
+   ```
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+3. Open browser and access http://localhost:8080/
