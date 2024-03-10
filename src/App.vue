@@ -1,11 +1,12 @@
 <script setup>
 import { onMounted, ref } from "vue";
+import { storeToRefs } from "pinia";
 import StartVue from "@/components/Start.vue";
 import ContentVue from "@/components/Content.vue";
 import ScoreVue from "@/components/Score.vue";
 import { useQuizStore } from "@/stores/quiz";
 
-const store = useQuizStore();
+const { activeSubject } = storeToRefs(useQuizStore());
 const darkMode = ref(true);
 
 function themeToggleBtn(e) {
@@ -34,9 +35,9 @@ onMounted(() => {
   <main class="px-[2rem] py-[3rem] md:px-[10rem] md:py-[3rem]">
     <div class="flex items-center justify-between gap-x-3">
       <div>
-        <div v-if="store.activeSubject" class="flex items-center gap-x-3">
-          <Icon icon="devicon:javascript" width="2rem" />
-          <p class="text-lg font-semibold dark:text-white">{{ store.activeSubject.subject }}</p>
+        <div v-if="activeSubject" class="flex items-center gap-x-3">
+          <Icon :icon="activeSubject.icon" width="2rem" />
+          <p class="text-lg font-semibold dark:text-white">{{ activeSubject.subject }}</p>
         </div>
       </div>
       <div class="flex items-center gap-x-3">
